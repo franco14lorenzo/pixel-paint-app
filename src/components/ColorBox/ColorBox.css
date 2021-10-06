@@ -1,0 +1,14 @@
+.color-box {
+  width: 25px;
+  height: 25px;
+  margin: 1px;
+  border: solid #e5e5e5 1px;
+  border-radius: 2px;
+}
+
+.color-box:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  border: solid #535353 2px;
+  box-shadow: rgba(112, 112, 112, 0.2) 0px 7px 29px 0px;
+}
