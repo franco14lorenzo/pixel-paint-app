@@ -10,12 +10,20 @@ const Display = (props) => {
   const [holdingClick, setHoldingClick] = useState(false);
   const area = useWindowSize(); 
   const cells = Array.from({ length: area});
+
+  const handleContexMenu = (event) => {
+    
+    setOpenColorPicker(true)
+    setAnchorPoint({ x: event.clientX, y: event.clientY });
+  }
+  
   
   return (
     <div 
       id='display'  
       onMouseDown={() => setHoldingClick(true)} 
-      onMouseUp={()=> setHoldingClick(false)} 
+      onMouseUp={()=> setHoldingClick(false)}
+      onContextMenu={handleContexMenu}  
     >
 
       {cells
@@ -24,8 +32,6 @@ const Display = (props) => {
             key={index} 
             currentColor={currentColor}
             holdingClick={holdingClick} 
-            setAnchorPoint={setAnchorPoint}
-            setOpenColorPicker={setOpenColorPicker}
           />
         )
       }
