@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/pixel-paint-app/static/css/main.c53b64ab.chunk.css",
+    "main.js": "/pixel-paint-app/static/js/main.a4005f70.chunk.js",
+    "main.js.map": "/pixel-paint-app/static/js/main.a4005f70.chunk.js.map",
+    "runtime-main.js": "/pixel-paint-app/static/js/runtime-main.5fab7bb1.js",
+    "runtime-main.js.map": "/pixel-paint-app/static/js/runtime-main.5fab7bb1.js.map",
+    "static/js/2.a4c34b1a.chunk.js": "/pixel-paint-app/static/js/2.a4c34b1a.chunk.js",
+    "static/js/2.a4c34b1a.chunk.js.map": "/pixel-paint-app/static/js/2.a4c34b1a.chunk.js.map",
+    "index.html": "/pixel-paint-app/index.html",
+    "static/css/main.c53b64ab.chunk.css.map": "/pixel-paint-app/static/css/main.c53b64ab.chunk.css.map",
+    "static/js/2.a4c34b1a.chunk.js.LICENSE.txt": "/pixel-paint-app/static/js/2.a4c34b1a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5fab7bb1.js",
+    "static/js/2.a4c34b1a.chunk.js",
+    "static/css/main.c53b64ab.chunk.css",
+    "static/js/main.a4005f70.chunk.js"
+  ]
+}
