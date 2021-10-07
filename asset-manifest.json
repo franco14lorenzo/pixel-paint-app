@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/pixel-paint-app/static/css/main.c53b64ab.chunk.css",
-    "main.js": "/pixel-paint-app/static/js/main.a4005f70.chunk.js",
-    "main.js.map": "/pixel-paint-app/static/js/main.a4005f70.chunk.js.map",
+    "main.css": "/pixel-paint-app/static/css/main.61b85031.chunk.css",
+    "main.js": "/pixel-paint-app/static/js/main.2fca8df7.chunk.js",
+    "main.js.map": "/pixel-paint-app/static/js/main.2fca8df7.chunk.js.map",
     "runtime-main.js": "/pixel-paint-app/static/js/runtime-main.5fab7bb1.js",
     "runtime-main.js.map": "/pixel-paint-app/static/js/runtime-main.5fab7bb1.js.map",
-    "static/js/2.a4c34b1a.chunk.js": "/pixel-paint-app/static/js/2.a4c34b1a.chunk.js",
-    "static/js/2.a4c34b1a.chunk.js.map": "/pixel-paint-app/static/js/2.a4c34b1a.chunk.js.map",
+    "static/js/2.f47e3775.chunk.js": "/pixel-paint-app/static/js/2.f47e3775.chunk.js",
+    "static/js/2.f47e3775.chunk.js.map": "/pixel-paint-app/static/js/2.f47e3775.chunk.js.map",
     "index.html": "/pixel-paint-app/index.html",
-    "static/css/main.c53b64ab.chunk.css.map": "/pixel-paint-app/static/css/main.c53b64ab.chunk.css.map",
-    "static/js/2.a4c34b1a.chunk.js.LICENSE.txt": "/pixel-paint-app/static/js/2.a4c34b1a.chunk.js.LICENSE.txt"
+    "static/css/main.61b85031.chunk.css.map": "/pixel-paint-app/static/css/main.61b85031.chunk.css.map",
+    "static/js/2.f47e3775.chunk.js.LICENSE.txt": "/pixel-paint-app/static/js/2.f47e3775.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5fab7bb1.js",
-    "static/js/2.a4c34b1a.chunk.js",
-    "static/css/main.c53b64ab.chunk.css",
-    "static/js/main.a4005f70.chunk.js"
+    "static/js/2.f47e3775.chunk.js",
+    "static/css/main.61b85031.chunk.css",
+    "static/js/main.2fca8df7.chunk.js"
   ]
 }
