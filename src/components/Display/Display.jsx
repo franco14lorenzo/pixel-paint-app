@@ -16,12 +16,19 @@ const Display = (props) => {
     setOpenColorPicker(true)
     setAnchorPoint({ x: event.clientX, y: event.clientY });
   }
+
+  const handleOnMouseDown = (event) => {
+    
+    if (event.buttons === 1){
+      setHoldingClick(true)
+    }    
+  }
   
   
   return (
     <div 
       id='display'  
-      onMouseDown={() => setHoldingClick(true)} 
+      onMouseDown={handleOnMouseDown} 
       onMouseUp={()=> setHoldingClick(false)}
       onContextMenu={handleContexMenu}  
     >
