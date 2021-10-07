@@ -8,13 +8,33 @@ const Display = (props) => {
 
   const {currentColor, setAnchorPoint, setOpenColorPicker} = props;
   const [holdingClick, setHoldingClick] = useState(false);
-  const area = useWindowSize(); 
-  const cells = Array.from({ length: area});
+  const [width, height] = useWindowSize();
+
+  const area = () => {
+    
+    const pixelSize = width / 100;
+    const rows = Math.floor( height / pixelSize );
+    return rows * 100;
+
+  }
+
+  const cells = Array.from({ length: area()});
 
   const handleContexMenu = (event) => {
-    
+   
+    let xCoordinate
+    let yCoordinate
+
+    width - event.clientX < 166
+    ? xCoordinate = event.clientX - 166
+    : xCoordinate = event.clientX
+
+    height - event.clientY < 32
+    ? yCoordinate = event.clientY - 32
+    : yCoordinate = event.clientY
+
     setOpenColorPicker(true)
-    setAnchorPoint({ x: event.clientX, y: event.clientY });
+    setAnchorPoint({ x: xCoordinate, y: yCoordinate });
   }
 
   const handleOnMouseDown = (event) => {
