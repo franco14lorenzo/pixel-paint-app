@@ -13,8 +13,5 @@ export default function useWindowSize() {
     return () => window.removeEventListener('resize', updateSize);
   }, []);
 
-  const [width, height] = size;
-  const pixelSize = width / 100;
-  const rows = Math.floor( height / pixelSize );
-  return rows * 100;
+  return size
 }
