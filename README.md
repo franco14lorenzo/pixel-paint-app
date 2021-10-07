@@ -1,6 +1,6 @@
 # PIXEL PAINT APP
 
-This project was created for a test of Carestino
+This project has been created for a test of Carestino
 
 ## Demo
 
