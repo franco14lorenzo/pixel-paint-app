@@ -12,7 +12,7 @@ const App = () => {
   
   return (
 
-    <div className='app' onContextMenu={(event) => event.preventDefault()}>
+    <div className='app' onContextMenu={(event) => event.preventDefault()} onDragStart={(event) => event.preventDefault()}>
 
       <Display 
         currentColor={currentColor} 
