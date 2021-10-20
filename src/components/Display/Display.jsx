@@ -14,14 +14,14 @@ const Display = (props) => {
     
     const pixelSize = width / 100;
     const rows = Math.floor( height / pixelSize );
-    return rows * 100;
 
+    return rows * 100;
   }
 
   const cells = Array.from({ length: area()});
 
   const handleContexMenu = (event) => {
-   
+       
     let xCoordinate
     let yCoordinate
 
@@ -38,10 +38,8 @@ const Display = (props) => {
   }
 
   const handleOnMouseDown = (event) => {
-    
-    if (event.buttons === 1){
-      setHoldingClick(true)
-    }    
+  
+    event.buttons === 1 && setHoldingClick(true)          
   }
   
   
@@ -58,7 +56,7 @@ const Display = (props) => {
           <Pixel 
             key={index} 
             currentColor={currentColor}
-            holdingClick={holdingClick} 
+            holdingClick={holdingClick}
           />
         )
       }

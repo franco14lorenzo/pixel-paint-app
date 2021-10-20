@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from 'react';
 
 const Fade = ({ show, children }) => {
-  const [shouldRender, setRender] = useState(show);
+
+  const [shouldRender, setShouldRender] = useState(show);
 
   useEffect(() => {
-    if (show) setRender(true);
+    show && setShouldRender(true);
   }, [show]);
 
   const onAnimationEnd = () => {
-    if (!show) setRender(false);
-  };
+
+    !show && setShouldRender(false);
+  }
 
   return (
     shouldRender && (
@@ -17,7 +19,9 @@ const Fade = ({ show, children }) => {
         style={{ animation: `${show ? 'fadeIn' : "fadeOut"} 1s` }}
         onAnimationEnd={onAnimationEnd}
       >
+
         {children}
+
       </div>
     )
   );
