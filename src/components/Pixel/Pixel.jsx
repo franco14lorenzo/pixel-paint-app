@@ -12,9 +12,14 @@ const Pixel = (props) => {
   }
   
   const applyColor = (boolean) => {
-   
+       
     setPainted(boolean)
     setPixelColor(currentColor)    
+  }
+
+  const handleOnMouseMove = (event) => {
+        
+   holdingClick && applyColor(true)    
   }
 
   return (
@@ -22,7 +27,7 @@ const Pixel = (props) => {
       className='pixel'
       style={painted ? stylePixel : null}
       onClick={() => applyColor(!painted)}
-      onMouseMove={(holdingClick ? () => applyColor(true) : null)}
+      onMouseMove={handleOnMouseMove}
     />
   );
 };
